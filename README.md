@@ -4,7 +4,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ![](readme-preview.jpg)
 
-[Live Demo](https://kennyestrella-easybank-frontendmentor.netlify.app/)
+[Live Demo](https://easybank-reactjs.netlify.app/)
 
 [Solution URL](https://www.frontendmentor.io/solutions/html-5-css-javascript-filezilla-hostinger-nDihX7cKd)
 
