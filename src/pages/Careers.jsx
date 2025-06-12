@@ -1,3 +1,7 @@
 export const Careers = () => {
-  return <div>Careers</div>;
+  return (
+    <div className="dummy-container">
+      <h1>Careers</h1>
+    </div>
+  );
 };
