@@ -1,0 +1,39 @@
+@use "../variables";
+@use "../media-queries";
+
+.button__cta {
+  display: inline-block;
+  padding: 1.5rem 0 1.5rem 0;
+  &--primary {
+    position: relative;
+    background: linear-gradient(
+      45deg,
+      rgba(variables.$limeGreen, 1),
+      rgba(variables.$brightCyan, 1)
+    );
+    padding: 1.5rem 3.5rem;
+    border-radius: 5rem;
+    color: variables.$white;
+    transition: background 1s;
+    @include media-queries.mediaQuery(viewport440) {
+      padding: 1.1rem 2.9rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 5rem;
+      background-color: variables.$veryLightGray;
+      opacity: 0;
+      transition: variables.$transitionDefault;
+    }
+    &:hover {
+      &::before {
+        opacity: 0.5;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../variables";
+@use "../media-queries";
+
+.hamburger-menu {
+  display: none;
+  @include media-queries.mediaQuery(viewport780) {
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+  }
+  &__link span {
+    display: block;
+    height: 0.2rem;
+    width: 3.6rem;
+    background-color: variables.$darkBlue;
+    transform-origin: 3px 1px;
+    transition: variables.$transitionDefault;
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__link-clicked span {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}

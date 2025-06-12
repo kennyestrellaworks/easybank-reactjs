@@ -1,0 +1,293 @@
+@use "../variables";
+@use "../media-queries";
+
+.hero-box {
+  position: relative;
+  z-index: 999;
+}
+
+.hero {
+  background-color: variables.$white;
+
+  &__container {
+    height: 85rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    // background-color: gray;
+    padding: 0 2rem;
+    @include media-queries.mediaQuery(viewport780) {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+  &__column-1 {
+    width: 40%;
+    // background-color: tan;
+    @include media-queries.mediaQuery(viewport780) {
+      width: 60%;
+      // background-color: tan;
+      order: 2;
+      margin: 0 auto;
+      padding: 10rem 0;
+    }
+    @include media-queries.mediaQuery(viewport550) {
+      width: 90%;
+    }
+    @include media-queries.mediaQuery(viewport480) {
+      padding: 8rem 0;
+    }
+  }
+  &__column-2 {
+    width: 70%;
+    // background-color: green;
+    @include media-queries.mediaQuery(viewport780) {
+      width: 100%;
+      // background-color: green;
+      height: 81rem;
+      order: 1;
+    }
+    @include media-queries.mediaQuery(viewport770) {
+      height: 79rem;
+    }
+    @include media-queries.mediaQuery(viewport760) {
+      height: 78rem;
+    }
+    @include media-queries.mediaQuery(viewport740) {
+      height: 77rem;
+    }
+    @include media-queries.mediaQuery(viewport730) {
+      height: 75.7rem;
+    }
+    @include media-queries.mediaQuery(viewport710) {
+      height: 74.2rem;
+    }
+    @include media-queries.mediaQuery(viewport700) {
+      height: 72.9rem;
+    }
+    @include media-queries.mediaQuery(viewport690) {
+      height: 72.9rem;
+    }
+    @include media-queries.mediaQuery(viewport680) {
+      height: 71.5rem;
+    }
+    @include media-queries.mediaQuery(viewport670) {
+      height: 70rem;
+    }
+    @include media-queries.mediaQuery(viewport650) {
+      height: 68.8rem;
+    }
+    @include media-queries.mediaQuery(viewport640) {
+      height: 67.3rem;
+    }
+    @include media-queries.mediaQuery(viewport620) {
+      height: 66rem;
+    }
+    @include media-queries.mediaQuery(viewport610) {
+      height: 64.5rem;
+    }
+    @include media-queries.mediaQuery(viewport590) {
+      height: 63.2rem;
+    }
+    @include media-queries.mediaQuery(viewport580) {
+      height: 61.8rem;
+    }
+    @include media-queries.mediaQuery(viewport560) {
+      height: 60.4rem;
+    }
+    @include media-queries.mediaQuery(viewport550) {
+      height: 59rem;
+    }
+    @include media-queries.mediaQuery(viewport530) {
+      height: 57.8rem;
+    }
+    @include media-queries.mediaQuery(viewport520) {
+      height: 56.4rem;
+    }
+    @include media-queries.mediaQuery(viewport500) {
+      height: 54.8rem;
+    }
+    @include media-queries.mediaQuery(viewport490) {
+      height: 54.2rem;
+    }
+    @include media-queries.mediaQuery(viewport480) {
+      height: 53rem;
+    }
+    @include media-queries.mediaQuery(viewport470) {
+      height: 52.5rem;
+    }
+    @include media-queries.mediaQuery(viewport460) {
+      height: 51.2rem;
+    }
+    @include media-queries.mediaQuery(viewport450) {
+      height: 50.6rem;
+    }
+    @include media-queries.mediaQuery(viewport440) {
+      height: 49.2rem;
+    }
+    @include media-queries.mediaQuery(viewport430) {
+      height: 48.9rem;
+    }
+    @include media-queries.mediaQuery(viewport420) {
+      height: 47.4rem;
+    }
+    @include media-queries.mediaQuery(viewport420) {
+      height: 47rem;
+    }
+    @include media-queries.mediaQuery(viewport400) {
+      height: 45.6rem;
+    }
+    @include media-queries.mediaQuery(viewport390) {
+      height: 45rem;
+    }
+    @include media-queries.mediaQuery(viewport380) {
+      height: 43.8rem;
+    }
+    @include media-queries.mediaQuery(viewport370) {
+      height: 43.2rem;
+    }
+    @include media-queries.mediaQuery(viewport360) {
+      height: 42rem;
+    }
+    @include media-queries.mediaQuery(viewport350) {
+      height: 41.4rem;
+    }
+    @include media-queries.mediaQuery(viewport340) {
+      height: 40.1rem;
+    }
+    @include media-queries.mediaQuery(viewport330) {
+      height: 38.9rem;
+    }
+    @include media-queries.mediaQuery(viewport320) {
+      height: 37.3rem;
+    }
+    @include media-queries.mediaQuery(viewport310) {
+      height: 36.3rem;
+    }
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    // background-color: tan;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include media-queries.mediaQuery(viewport780) {
+      text-align: center;
+      height: auto;
+    }
+  }
+  &__images {
+    display: flex;
+    align-items: center;
+    // background-color: green;
+    width: 100%;
+    position: relative;
+    @include media-queries.mediaQuery(viewport780) {
+      height: 69rem;
+      order: 1;
+    }
+    &-wrap {
+      position: absolute;
+      top: 1rem;
+      @include media-queries.mediaQuery(viewport780) {
+        top: -17rem;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  &__images-1 {
+    position: absolute;
+    top: -188px;
+    left: -22px;
+    z-index: 1000;
+    @include media-queries.mediaQuery(viewport780) {
+      display: none;
+    }
+  }
+  &__images-1a {
+    display: none;
+    @include media-queries.mediaQuery(viewport780) {
+      display: block;
+      position: relative;
+      top: 169px;
+      width: 100%;
+    }
+    @include media-queries.mediaQuery(viewport590) {
+      top: 187px;
+    }
+    @include media-queries.mediaQuery(viewport580) {
+      top: 182px;
+    }
+    @include media-queries.mediaQuery(viewport490) {
+      top: 198px;
+    }
+    @include media-queries.mediaQuery(viewport380) {
+      top: 205px;
+    }
+  }
+  &__images-2 {
+    position: absolute;
+    top: -46px;
+    left: 178px;
+    z-index: 2100;
+    @include media-queries.mediaQuery(viewport780) {
+      transform: translate(-50%, 0);
+      top: -26px;
+      left: 50%;
+      width: 100%;
+    }
+    @include media-queries.mediaQuery(viewport750) {
+      top: -15px;
+    }
+    @include media-queries.mediaQuery(viewport720) {
+      top: -5px;
+    }
+    @include media-queries.mediaQuery(viewport690) {
+      top: 6px;
+    }
+    @include media-queries.mediaQuery(viewport660) {
+      top: 17px;
+    }
+    @include media-queries.mediaQuery(viewport630) {
+      top: 27px;
+    }
+    @include media-queries.mediaQuery(viewport600) {
+      top: 37px;
+    }
+    @include media-queries.mediaQuery(viewport570) {
+      top: 48px;
+    }
+    @include media-queries.mediaQuery(viewport540) {
+      top: 59px;
+    }
+    @include media-queries.mediaQuery(viewport510) {
+      top: 69px;
+    }
+    @include media-queries.mediaQuery(viewport490) {
+      top: 76px;
+    }
+    @include media-queries.mediaQuery(viewport470) {
+      top: 83px;
+    }
+    @include media-queries.mediaQuery(viewport450) {
+      top: 90px;
+    }
+    @include media-queries.mediaQuery(viewport430) {
+      top: 97px;
+    }
+    @include media-queries.mediaQuery(viewport410) {
+      top: 104px;
+    }
+    @include media-queries.mediaQuery(viewport390) {
+      top: 111px;
+    }
+    @include media-queries.mediaQuery(viewport370) {
+      top: 118px;
+    }
+    @include media-queries.mediaQuery(viewport350) {
+      top: 125px;
+    }
+  }
+}

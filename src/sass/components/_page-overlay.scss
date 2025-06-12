@@ -1,0 +1,16 @@
+@use "../variables";
+
+.page__overlay {
+  position: fixed;
+  width: 100%;
+  z-index: 7777;
+  background: linear-gradient(variables.$darkBlue, transparent);
+  // background-color: tan;
+  transition: variables.$transitionDefault;
+  height: 0;
+  top: 0;
+  left: 0;
+  &-show {
+    height: 100vh;
+  }
+}

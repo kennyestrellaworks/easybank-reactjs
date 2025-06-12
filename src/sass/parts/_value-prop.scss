@@ -1,0 +1,54 @@
+@use "../variables";
+@use "../media-queries";
+
+.value-prop {
+  position: relative;
+  //   background-color: tan;
+  background-color: variables.$lightGrayishBlue;
+  width: 100%;
+  padding: 10rem 2rem;
+  z-index: 2000;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    width: 60%;
+    padding: 0 2rem;
+    @include media-queries.mediaQuery(viewport780) {
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include media-queries.mediaQuery(viewport490) {
+      width: 80%;
+    }
+    @include media-queries.mediaQuery(viewport440) {
+      width: 100%;
+    }
+  }
+  &__content {
+    position: relative;
+    // background-color: tan;
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8rem;
+      justify-content: space-between;
+      @include media-queries.mediaQuery(viewport570) {
+        margin-top: 4rem;
+      }
+    }
+    &-item {
+      width: 25%;
+      padding: 2rem;
+      @include media-queries.mediaQuery(viewport990) {
+        flex: 0 0 50%;
+        text-align: center;
+      }
+      @include media-queries.mediaQuery(viewport460) {
+        flex: 0 0 100%;
+        text-align: center;
+      }
+    }
+  }
+}
